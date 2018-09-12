@@ -41,8 +41,8 @@ class App (object):
             'sender_addr1': addr, 
             'sender_country': country,
             'sender_name': 'Company',
-            'zip': '60606',
-            'city': 'Chicago',
+            'sender_zip': '60606',
+            'sender_city': 'Chicago',
             'sender_url': url,
             'sender_reminder': "Just bad luck."
         }
@@ -72,6 +72,20 @@ class App (object):
             'textconstructor': 'external',
             'textfetch': url + text_path,
             'textfetchwhen': 'send',
-            'p['+str(list_id)+'}': list_id
+            'p['+str(list_id)+']': list_id
+        }
+        return requests.post(self.url, params=params, data=payload)
+
+    def create_address(self, addr, country, list_id):
+        params = copy.deepcopy(self._default_params)
+        params['api_action'] = 'address_add'
+        payload = {
+            'company_name': 'Company',
+            'address_1': addr,
+            'city': 'Chicago',
+            'state': 'IL',
+            'zip': '60606',
+            'country': country,
+            'p['+str(list_id)+']': list_id
         }
         return requests.post(self.url, params=params, data=payload)
