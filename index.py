@@ -40,7 +40,7 @@ if __name__ == "__main__":
     addr_r = app.create_address(addr, country, list_id)
     addr_r.raise_for_status()
     print_res(addr_r, 'id')
-    cmp_r = app.create_campaign('2018-09-12 8:19:00', list_id, msg_id)
+    cmp_r = app.create_campaign('2018-09-12 8:30:00', list_id, msg_id)
     cmp_r.raise_for_status()
     print_res(cmp_r, 'id')
     
