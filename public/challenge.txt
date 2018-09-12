@@ -1,0 +1,12 @@
+Hello User,
+Thanks for just connecting. Please see below directions for the coding exercise. 
+Don't feel the need to complete this over the weekend but please let me know the timeline in which you think you could complete it when you get the chance.
+Coding exercise Directions
+1. Open a trial account with ActiveCampaign (http://www.activecampaign.com/).
+2. Write python or PHP code to connect to ActiveCampaign API with this documentation (http://www.activecampaign.com/api/).
+3. Create, schedule and send a campaign for your contacts via the API (create your own dummy list of emails).
+Directions to submit your exercise:
+Please provide your code and the trial account registration email address to me at jmcintyre@activecampaign.com.
+If you have any questions, please feel free to reach out to me at any time.
+All the best,
+Jack
